@@ -13,7 +13,7 @@ class Libcgosling < Formula
       "-S", ".",
       "-B", "build",
       "-DCMAKE_BUILD_TYPE=Release",
-      std_cmake_args
+      *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
