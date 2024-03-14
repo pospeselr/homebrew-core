@@ -24,7 +24,7 @@ class Libcgosling < Formula
 
       int main() {
         gosling_library* library = nullptr;
-        gosling_error* err = nullptr;
+        gosling_error* error = nullptr;
         ::gosling_library_init(&library, &error);
         if (library != nullptr && error == nullptr) {
           gosling_library_free(library);
